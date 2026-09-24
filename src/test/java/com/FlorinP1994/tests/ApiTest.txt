@@ -1,0 +1,17 @@
+START
+
+SEND GET request to https://jsonplaceholder.typicode.com/todos/1
+
+CHECK response status code
+IF status code is 200
+    CONTINUE
+ELSE
+    FAIL TEST
+
+CHECK response contains "title"
+IF "title" exists
+    PASS TEST
+ELSE
+    FAIL TEST
+
+END
