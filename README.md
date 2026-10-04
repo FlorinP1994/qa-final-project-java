@@ -27,3 +27,18 @@ Run:
 
 ```bash
 mvn test
+```
+
+## Running with Docker
+
+Build the Docker image:
+
+```bash
+docker build -t qa-final-project-java .
+```
+
+Run the tests in a Docker container:
+
+```bash
+docker run --rm qa-final-project-java
+```
